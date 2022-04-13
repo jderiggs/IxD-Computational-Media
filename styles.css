@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700,500,600"); /* Google fonts */
+
+body{
+    background-image: url(img/wireframe.png);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#titlebar h1{
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#titlebar i{
+    margin: 0;
+    font-size: 2rem;
+}
+
+.body-container h1{
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.body-container{
+    border-radius: 10px;
+    box-shadow: 6px 6px 12px #d9d9d9,
+                -6px -6px 12px #ffffff; /* Adds a neumorphic background shadow */
+    width: 90vw;
+
+}
