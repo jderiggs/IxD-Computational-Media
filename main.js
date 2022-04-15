@@ -2,7 +2,12 @@
 const menuBtn= document.querySelector('.menu-btn'); //creating a constant statement targeting the menu-btn class
 const nav=document.querySelector('nav'); //creating a constant statement targeting the nav
 const bgBlur=document.querySelector('.blurbg'); //creating a constant statement targeting the black background
-const bgClickbox=document.querySelector('.bgclick') //creating a constant satement targeting an invisible clickbox
+const bgClickbox=document.querySelector('.bgclick'); //creating a constant satement targeting an invisible clickbox
+const bgBlur2=document.querySelector('.blurbg2'); //creating a constant statement targeting the black background
+const bgClickbox2=document.querySelector('.bgclick2'); //creating a constant satement targeting an invisible clickbox
+const questionPrompt=document.querySelector('.prompt');
+const promptContainer=document.querySelector('.prompt-container');
+const promptCloser=document.querySelector('.promptcloser');
 let menuOpen = false //declaring that the menu should be closed globally
 
 menuBtn.addEventListener('click', () => { //allowing the menu button to be interacted with when clicked/tapped on
@@ -17,4 +22,22 @@ bgClickbox.addEventListener('click', () => { //allowing the user to click outsid
     nav.classList.toggle('active');
     bgBlur.classList.toggle('active');
     bgClickbox.classList.toggle('active');
+});
+
+questionPrompt.addEventListener('click', () =>{
+    bgBlur2.classList.toggle('active');
+    bgClickbox2.classList.toggle('active');
+    promptContainer.classList.toggle('active');
+});
+
+bgClickbox2.addEventListener('click', () => { //allowing the user to click prompt in order to close it 
+    bgBlur2.classList.toggle('active');
+    bgClickbox2.classList.toggle('active');
+    promptContainer.classList.toggle('active');
+});
+
+promptCloser.addEventListener('click', () =>{ //allowing the user to click buttons to close prompts
+    bgBlur2.classList.toggle('active');
+    bgClickbox2.classList.toggle('active');
+    promptContainer.classList.toggle('active');
 });

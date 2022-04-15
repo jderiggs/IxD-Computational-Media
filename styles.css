@@ -4,13 +4,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    z-index: 0;
 }
 
 body{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     /*background-image: url(img/wireframe.png);*/
     /* display: flex; */
-    
+    background-color: #f4f3f7;
     justify-content: center;
     min-height: 100vh;
 }
@@ -27,7 +28,7 @@ body{
 .menu-btn_lines{
     width: 20px;
     height: 5px;
-    background: #FFF;
+    background: #f4f3f7;;
     border-radius: 1px;
     transition: all .5s ease-in-out;
 }
@@ -38,7 +39,7 @@ body{
     position:absolute;
     width: 30px;
     height: 5px;
-    background: #FFF;
+    background: #f4f3f7;;
     border-radius: 1px;
     transition: all .5s ease-in-out;
 }
@@ -93,7 +94,7 @@ header nav ul li a{
 }
 
 header nav ul li a.active{
-    color: #FFF;
+    color: #f4f3f7;
     background: rgb(149,153,226);
     background: linear-gradient(138deg, rgba(149,153,226,1) 0%, rgba(139,198,236,1) 100%);
 }
@@ -119,7 +120,7 @@ header nav {
     position: fixed;
     width: 50vw;
     height: 100%;
-    background-color: #FFF;
+    background-color: #f4f3f7;
     top: 60px;
     left: -100%;
     transition: 0.5s;
@@ -134,7 +135,16 @@ header nav.active {
     z-index: 0;
     width: 100vw;
     height: 100vh;
-    transition: 0.5s;
+    transition: 0s;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.blurbg2{
+    position: fixed;
+    z-index: 0;
+    width: 100vw;
+    height: 100vh;
+    transition: 0s;
     background-color: rgba(0, 0, 0, 0);
 }
 
@@ -143,18 +153,37 @@ header nav.active {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+.blurbg2.active{
+	z-index: 4;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
 .bgclick{
     position: fixed;
     z-index: 2;
     width: 100vw;
     height: 100vh;
-    transition: 0.1s;
+    transition: 0s;
+    left: -100%;
+}
+
+.bgclick2{
+    position: fixed;
+    z-index: 5;
+    width: 100vw;
+    height: 100vh;
+    transition: 0s;
     left: -100%;
 }
 
 .bgclick.active{
     left: 0;
 }
+
+.bgclick2.active{
+    left: 0;
+}
+
 
 #titlebar{
     z-index: 3;
@@ -172,10 +201,61 @@ header nav.active {
     margin-bottom: auto;
     margin-left: auto;
     margin-right: 1rem;
-    color: white;
+    color: #f4f3f7;
     font-size: 1rem;
     text-transform: uppercase;
     text-align: center;
+}
+
+.prompt-container{
+    z-index: 5;
+    padding: 2rem;
+    border-radius: 25px;
+    position: fixed;
+    display: flex;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: fit-content;
+    width: 15rem;
+    background-color: #f4f3f7;
+    box-shadow:  0px 5px 4px #d4d3d7;
+    text-align: center;
+    text-transform:uppercase;
+    font-size: 0.9rem;
+    color: #583fc7;
+    font-weight: 400;
+    transition: .5s;
+    top: -100%;
+    flex-flow: column;
+}
+
+.prompt-container{
+    align-self: flex-start;
+}
+
+.button-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+button{
+    min-width: 4rem;
+    border: none;
+    flex-grow: 1;
+    text-transform: uppercase;
+    padding: .75rem;
+    border-radius: 50px;
+    margin-top: 1rem;
+    color: #fff;
+    background: rgb(174,149,226);
+    background: linear-gradient(137deg, rgba(174,149,226,1) 0%, rgba(102,145,255,1) 100%);
+}
+
+.prompt-container.active{
+    top: 50%;
 }
 
 .body-container h1{
@@ -195,14 +275,20 @@ header nav.active {
     color: #d13cdf;
 }
 
+.body-container i{
+ display: none;
+}
+
 .body-container .prompt{
-    display: flex;
+    margin: auto;
+    display: block;
     justify-content: center;
     align-items: center;
-    padding-top: 2rem;
+    padding: 1rem;
     font-size: 2rem;
+    width: 4rem;
     background: rgb(174,149,226);
-    background: linear-gradient(137deg, rgba(174,149,226,1) 50%, rgba(102,145,255,1) 65%);
+    background: linear-gradient(137deg, rgba(174,149,226,1) 20%, rgba(102,145,255,1) 80%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -215,8 +301,8 @@ header nav.active {
     padding: 2rem;
     position: relative;
     border-radius: 10px;
-    box-shadow: 6px 6px 12px #d9d9d9,
-                -6px -6px 12px #ffffff; /* Adds a neumorphic background shadow */
+    box-shadow:  6px 6px 17px #d4d3d7,
+    -6px -6px 17px #ffffff; /* Adds a neumorphic background shadow */
 
 }
 
