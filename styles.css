@@ -75,18 +75,21 @@ nav{
 header nav ul li {
     color: #331b9c;
     list-style: none;
-    text-align: center;
+    text-align: left;
 }
 
 header nav ul li a{
     text-transform: uppercase;
-    font-weight: 300;
+    font-weight: 400;
     color: #331b9c;
     text-decoration: none;
     display: block;
     height: 3rem;
     line-height: 3rem;
     padding: 0 0rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    font-size: 0.9rem;
 }
 
 header nav ul li a.active{
@@ -104,6 +107,8 @@ header nav ul li a span{
     height: 3rem;
     line-height: 3rem;
     padding: 0 1rem;
+    padding-left: .5rem;
+    text-align: center;
 }
 
 header nav ul li a span.topnav{
@@ -125,8 +130,8 @@ header nav.active {
 } /* unhides the navbar whenever the hamburger menu is interacted with */
 
 .blurbg{
-    position: fixed;
-    z-index: 1;
+	position: fixed;
+    z-index: 0;
     width: 100vw;
     height: 100vh;
     transition: 0.5s;
@@ -134,6 +139,7 @@ header nav.active {
 }
 
 .blurbg.active{
+	z-index: 1;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -187,6 +193,18 @@ header nav.active {
 .body-container a{
     font-size: 1.2rem;
     color: #d13cdf;
+}
+
+.body-container .prompt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+    font-size: 2rem;
+    background: rgb(174,149,226);
+    background: linear-gradient(137deg, rgba(174,149,226,1) 50%, rgba(102,145,255,1) 65%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .body-container{
