@@ -9,8 +9,8 @@
 body{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     /*background-image: url(img/wireframe.png);*/
-    background-color: #555555;
-    display: flex;
+    /* display: flex; */
+    
     justify-content: center;
     min-height: 100vh;
 }
@@ -20,9 +20,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80px;
-    height: 80px;
-    border: 3px solid white;
+    width: 50px;
+    height: 60px;
     transition: all .5s ease-in-out;}
 
 .menu-btn_lines{
@@ -54,7 +53,7 @@ body{
 
 /* CSS Animation to toggle sidebar */
 .menu-btn.open .menu-btn_lines{
-    transform: translateX(70px);
+    transform: translateX(-50px);
     background: transparent;
 }
 
@@ -67,16 +66,25 @@ body{
 }
 
 #titlebar{
+    z-index: 1;
+    position: fixed;
     display: flex;
     flex-direction: row;
-    position: relative;
+    background: rgb(174,149,226);
+    background: linear-gradient(137deg, rgba(174,149,226,1) 0%, rgba(102,145,255,1) 100%);
     width: 100vw;
 }
 
 
 #titlebar h1{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: 1rem;
+    color: white;
     font-size: 1rem;
     text-transform: uppercase;
+    text-align: center;
 }
 
 #titlebar i{
@@ -90,10 +98,23 @@ body{
     text-transform: uppercase;
 }
 
+.body-container p{
+    margin-top: 2rem;
+}
+
 .body-container{
+    display: inline-block;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 5rem;
+    padding: 2rem;
     position: relative;
-    /*border-radius: 10px;
+    border-radius: 10px;
     box-shadow: 6px 6px 12px #d9d9d9,
                 -6px -6px 12px #ffffff; /* Adds a neumorphic background shadow */
-    width: 90vw;
+
+}
+
+.body-container:nth-child(3){
+    margin-top: 1rem;
 }
