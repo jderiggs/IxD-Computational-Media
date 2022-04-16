@@ -352,10 +352,6 @@ button{
     padding: 1rem;
     font-size: 2rem;
     width: 4rem;
-    background: rgb(174,149,226);
-    background: linear-gradient(137deg, rgba(174,149,226,1) 20%, rgba(102,145,255,1) 80%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 .body-container img{
