@@ -11,11 +11,11 @@
     <header>
         <nav>
             <ul>
-              <li><a href="#" class="active"><span class="topnav">Home</span></a></li>
-              <li><a href="#" class="active">Initial Setup</a></li>
+              <li><a href="index.html"><span class="topnav">Home</span></a></li>
+              <li><a href="index.html">Initial Setup</a></li>
               <li><a href="headset.html">Headset / Runtime</a></li>
-              <li><a href="accessibility.html"><span>Accessibility</span></a></li>
-              <li><a href="accessibility.html">Confirmation</a></li>
+              <li><a href="#" class="active"><span>Accessibility</span></a></li>
+              <li><a href="#" class="active">Confirmation</a></li>
               <li><a href="#">Optional Hardware</a></li>
               <li><a href="#">Optional Software</a></li>
               <li><a href="#">Overlays</a></li>
@@ -30,60 +30,58 @@
           <div class="bgclick"></div>
           <div class="blurbg"></div>
           <div class="bgclick2"></div>
-          <div class="blurbg2"></div> <!--Overlay elements-->
+          <div class="blurbg2"></div>
+          <div class="bgclick3"></div>
+          <div class="blurbg3"></div> <!--Overlay elements-->
 
         <div id="titlebar"> <!--This div contains the hamburger menu and the title text-->
             <!--<i class="fa-solid fa-bars"></i>-->
             <div class="menu-btn">
                 <div class="menu-btn_lines"></div>
             </div>
-                <h1>Home</h1>
+                <h1>Headset / System</h1>
         </div>
     </header>
 
-        <div class="body-container"> <!--Contains the first body element-->
-            <h1>SetupXR</h1>
-            <img src="img/setupxr2.svg" alt="SetupXR" class="logo">
-            <a href="headset.html">
-                <button>Begin Setup</button>
-            </a>
-        </div>
+    <div class="body-container"> <!--Contains the first body element-->
+        <h1>Choose Your System</h1>    
+        <i class="fa-solid fa-circle-question prompt"></i>  
+    </div>
+
+    <div class="body-container">
+            <img src="img/steamvr.svg" alt="Steam VR" class="buttonprompt">
+    </div>
+
+    <div class="body-container">
+        <a href="oculussetup.html">
+            <img src="img/oculus.svg" alt="Oculus">
+        </a>
+    </div>
+
     <div class="prompt-container">
-        <p>Consectetur nisi laborum irure cupidatat ex.</p>
+        <p>System refers to the platform that your headset supports. For example, the Meta Quest 2 uses Oculus, but can use SteamVR if linked to a computer.</p>
         <div class="button-container">
             <button class="promptcloser">Ok</button>
         </div>
     </div>
+
+    <div class="prompt-container2">
+        <p>Do you have any physical disabilities relating to leg mobility?</p>
+        <div class="button-container">
+            <a href="">
+                <button>Yes</button>
+            </a>
+            <a href="steamvrsetup.html">
+                <button>No</button>
+             </a>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
     <style>
         body{
-            background: rgb(174,149,226);
-            background: linear-gradient(137deg, rgba(174,149,226,1) 0%, rgba(102,145,255,1) 100%);;
             overflow-y: hidden;
         }
-        #titlebar{
-            background: transparent;
-            display: none;
-        }
-
-        button{
-            margin-top: 30vh;
-            background: #f4f3f7;
-            color: #583fc7;
-        }
-
-        .body-container h1{
-            color: #f4f3f7;
-            margin-bottom: 15vh;
-        }
-
-        .body-container img{
-            max-width: 20rem;
-        }
-
-        .body-container{
-            box-shadow:  none;
-        }
     </style>
-    <script src="main.js"></script>
 </body>
 </html> 
