@@ -11,8 +11,8 @@
     <header>
         <nav>
             <ul>
-              <li><a href="#" class="active"><span class="topnav">Home</span></a></li>
-              <li><a href="#" class="active">Initial Setup</a></li>
+              <li><a href="index.html"><span class="topnav">Home</span></a></li>
+              <li><a href="index.html">Initial Setup</a></li>
               <li><a href="headset.html">Headset / Runtime</a></li>
               <li><a href="accessibility.html"><span>Accessibility</span></a></li>
               <li><a href="accessibility.html">Confirmation</a></li>
@@ -20,7 +20,7 @@
               <li><a href="optionalsoftware.html">Optional Software</a></li>
               <li><a href="overlays.html">Overlays</a></li>
               <li><a href="tips.html"><span>Tips</span></a></li>
-              <li><a href="motionsickness.html">Motion Sickness</a></li>
+              <li><a href="#" class="active">Motion Sickness</a></li>
               <li><a href="#">Performance</a></li>
               <li><a href="#">Troubleshooting</a></li>
             </ul>
@@ -37,51 +37,38 @@
             <div class="menu-btn">
                 <div class="menu-btn_lines"></div>
             </div>
-                <h1>Home</h1>
+                <h1>Motion Sickness</h1>
         </div>
     </header>
 
         <div class="body-container"> <!--Contains the first body element-->
-            <h1>SetupXR</h1>
-            <img src="img/setupxr2.svg" alt="SetupXR" class="logo">
-            <a href="headset.html">
-                <button>Begin Setup</button>
-            </a>
-        </div>
+            <h1>Motion Sickness</h1>
+            <p>
+                VR sickness is very common, and should be addressed by the user immediately upon feeling it. Ginger or anti-nausea medication can mitigate VR Sickness. Anytime motion sickness is felt, it’s best to hop out of Virtual Reality as soon as possible and wait until a full recovery is made. 
+            </p>
+            <p>
+                VR Sickness varies greatly from person-to-person and some people may never even feel sick in the first place.
+            </p>
+<div class="button-container">
+    <a href="tips.html">
+        <button>Okay</button>
+    </a>
+</div>       
+</div>
     <div class="prompt-container">
-        <p>Consectetur nisi laborum irure cupidatat ex.</p>
-        <div class="button-container">
-            <button class="promptcloser">Ok</button>
+        <p>Do you have SteamVR Base Stations 1.0 or 2.0?</p>
+        <div class="button-container"> 
+            <a href="">
+                <button>Yes</button>
+            </a>
+            <a href="">
+                <button>No</button>
+            </a>
         </div>
     </div>
     <style>
-        body{
-            background: rgb(174,149,226);
-            background: linear-gradient(137deg, rgba(174,149,226,1) 0%, rgba(102,145,255,1) 100%);;
+            body{
             overflow-y: hidden;
-        }
-        #titlebar{
-            background: transparent;
-            display: none;
-        }
-
-        button{
-            margin-top: 30vh;
-            background: #f4f3f7;
-            color: #583fc7;
-        }
-
-        .body-container h1{
-            color: #f4f3f7;
-            margin-bottom: 15vh;
-        }
-
-        .body-container img{
-            max-width: 20rem;
-        }
-
-        .body-container{
-            box-shadow:  none;
         }
     </style>
     <script src="main.js"></script>
