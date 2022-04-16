@@ -16,6 +16,10 @@ body{
     min-height: 100vh;
 }
 
+a{
+    text-decoration: none;
+}
+
 .menu-btn{
     position: relative;
     display: flex;
@@ -71,6 +75,10 @@ body{
 nav{
     z-index: 3;
     width: 50vw;
+}
+
+header{
+    margin-bottom: 5rem;
 }
 
 header nav ul li {
@@ -297,7 +305,7 @@ button{
     text-transform: uppercase;
     padding: .75rem;
     border-radius: 50px;
-    margin-top: 1rem;
+    margin-top: 2rem;
     color: #fff;
     background: rgb(174,149,226);
     background: linear-gradient(137deg, rgba(174,149,226,1) 0%, rgba(102,145,255,1) 100%);
@@ -316,11 +324,13 @@ button{
     font-size: 1.5rem;
     text-align: center;
     text-transform: uppercase;
+    margin-bottom: 1rem;
 }
 
 .body-container p{
     color: #583fc7;
-    margin-top: 2rem;
+    margin-top: 1rem;
+    text-indent: 1rem;
 }
 
 .body-container a{
@@ -332,7 +342,7 @@ button{
  display: none;
 }
 
-.body-container .prompt{
+.body-container .questionblock{
     margin: auto;
     display: block;
     justify-content: center;
@@ -348,33 +358,36 @@ button{
 
 .body-container img{
     max-width: 12rem;
+    margin-top: .3rem;
+    margin-bottom: .3rem;
 }
 
-.body-container p span{
+.body-container h2{
+    color: #583fc7;;
     font-size: 1.1rem;
     font-weight: 500;
     text-align: center;
+    text-transform: uppercase;
+}
+
+.body-container h3{
+    color: #583fc7;;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
 }
 
 .body-container{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    margin-top: 5rem;
+    margin: 1rem;
     padding: 2rem;
     position: relative;
     border-radius: 10px;
     box-shadow:  6px 6px 17px #d4d3d7,
     -6px -6px 17px #ffffff; /* Adds a neumorphic background shadow */
 
-}
-
-.body-container:nth-child(3){ /* Reducing the size of the margin for the following container */
-    margin-top: 1rem;
-}
-
-.body-container:nth-child(4){ /* Reducing the size of the margin for the following container */
-    margin-top: 1rem;
 }
