@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SetupXR</title>
+    <html lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1," charset="utf-8"/> <!--This scales the viewport to match a more mobile-centric design-->
+    <link rel="stylesheet" href="styles.css"> <!--Linking the css file to the HTML-->
+    <script src="https://kit.fontawesome.com/87e16d25b8.js" crossorigin="anonymous"></script> <!--anonymous kit from fontawesome for iconography-->
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+              <li><a href="index.html"><span class="topnav">Home</span></a></li>
+              <li><a href="index.html">Initial Setup</a></li>
+              <li><a href="#" class="active">Headset / Runtime</a></li>
+              <li><a href="#"><span>Accessibility</span></a></li>
+              <li><a href="#">Confirmation</a></li>
+              <li><a href="#">Optional Hardware</a></li>
+              <li><a href="#">Optional Software</a></li>
+              <li><a href="#">Overlays</a></li>
+              <li><a href="#"><span>Tips</span></a></li>
+              <li><a href="#">Motion Sickness</a></li>
+              <li><a href="#">Performance</a></li>
+              <li><a href="#">Troubleshooting</a></li>
+            </ul>
+            </div>
+          </nav> <!--Nav sidebar-->
+
+          <div class="bgclick"></div>
+          <div class="blurbg"></div>
+          <div class="bgclick2"></div>
+          <div class="blurbg2"></div>
+          <div class="bgclick3"></div>
+          <div class="blurbg3"></div> <!--Overlay elements-->
+
+        <div id="titlebar"> <!--This div contains the hamburger menu and the title text-->
+            <!--<i class="fa-solid fa-bars"></i>-->
+            <div class="menu-btn">
+                <div class="menu-btn_lines"></div>
+            </div>
+                <h1>Headset / System</h1>
+        </div>
+    </header>
+
+    <div class="body-container"> <!--Contains the first body element-->
+        <h1>Choose Your System</h1>    
+        <i class="fa-solid fa-circle-question prompt"></i>  
+    </div>
+
+    <div class="body-container">
+            <img src="img/steamvr.svg" alt="Steam VR" class="buttonprompt">
+    </div>
+
+    <div class="body-container">
+        <a href="oculussetup.html">
+            <img src="img/oculus.svg" alt="Oculus">
+        </a>
+    </div>
+
+    <div class="prompt-container">
+        <p>System refers to the platform that your headset supports. For example, the Meta Quest 2 uses Oculus, but can use SteamVR if linked to a computer.</p>
+        <div class="button-container">
+            <button class="promptcloser">Ok</button>
+        </div>
+    </div>
+
+    <div class="prompt-container2">
+        <p>Do you have any physical disabilities relating to leg mobility?</p>
+        <div class="button-container">
+            <button>Yes</button>
+            <button>No</button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+    <style>
+        body{
+            overflow-y: hidden;
+        }
+    </style>
+</body>
+</html> 

@@ -5,8 +5,12 @@ const bgBlur=document.querySelector('.blurbg'); //creating a constant statement 
 const bgClickbox=document.querySelector('.bgclick'); //creating a constant satement targeting an invisible clickbox
 const bgBlur2=document.querySelector('.blurbg2'); //creating a constant statement targeting the black background
 const bgClickbox2=document.querySelector('.bgclick2'); //creating a constant satement targeting an invisible clickbox
+const bgBlur3=document.querySelector('.blurbg3'); //creating a constant statement targeting the black background
+const bgClickbox3=document.querySelector('.bgclick3'); //creating a constant satement targeting an invisible clickbox
 const questionPrompt=document.querySelector('.prompt');
+const buttonPrompt=document.querySelector('.buttonprompt');
 const promptContainer=document.querySelector('.prompt-container');
+const promptContainer2=document.querySelector('.prompt-container2');
 const promptCloser=document.querySelector('.promptcloser');
 let menuOpen = false //declaring that the menu should be closed globally
 
@@ -24,7 +28,13 @@ bgClickbox.addEventListener('click', () => { //allowing the user to click outsid
     bgClickbox.classList.toggle('active');
 });
 
-questionPrompt.addEventListener('click', () =>{
+questionPrompt.addEventListener('click', () => {
+    bgBlur2.classList.toggle('active');
+    bgClickbox2.classList.toggle('active');
+    promptContainer.classList.toggle('active');
+});
+
+promptCloser.addEventListener('click', () =>{ //allowing the user to click buttons to close prompts
     bgBlur2.classList.toggle('active');
     bgClickbox2.classList.toggle('active');
     promptContainer.classList.toggle('active');
@@ -36,8 +46,14 @@ bgClickbox2.addEventListener('click', () => { //allowing the user to click promp
     promptContainer.classList.toggle('active');
 });
 
-promptCloser.addEventListener('click', () =>{ //allowing the user to click buttons to close prompts
-    bgBlur2.classList.toggle('active');
-    bgClickbox2.classList.toggle('active');
-    promptContainer.classList.toggle('active');
+buttonPrompt.addEventListener('click', () => {
+    bgBlur3.classList.toggle('active');
+    bgClickbox3.classList.toggle('active');
+    promptContainer2.classList.toggle('active');
+});
+
+bgClickbox3.addEventListener('click', () => { //allowing the user to click prompt in order to close it 
+    bgBlur3.classList.toggle('active');
+    bgClickbox3.classList.toggle('active');
+    promptContainer2.classList.toggle('active');
 });
