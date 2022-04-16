@@ -13,13 +13,13 @@
             <ul>
               <li><a href="index.html"><span class="topnav">Home</span></a></li>
               <li><a href="index.html">Initial Setup</a></li>
-              <li><a href="#" class="active">Headset / Runtime</a></li>
+              <li><a href="headset.html">Headset / Runtime</a></li>
               <li><a href="accessibility.html"><span>Accessibility</span></a></li>
               <li><a href="accessibility.html">Confirmation</a></li>
               <li><a href="optionalhardware.html">Optional Hardware</a></li>
               <li><a href="optionalsoftware.html">Optional Software</a></li>
               <li><a href="overlays.html">Overlays</a></li>
-              <li><a href="tips.html"><span>Tips</span></a></li>
+              <li><a href="#" class="active"><span>Tips</span></a></li>
               <li><a href="#">Motion Sickness</a></li>
               <li><a href="#">Performance</a></li>
               <li><a href="#">Troubleshooting</a></li>
@@ -39,24 +39,29 @@
             <div class="menu-btn">
                 <div class="menu-btn_lines"></div>
             </div>
-                <h1>Headset / System</h1>
+                <h1>Tips</h1>
         </div>
     </header>
 
-    <div class="body-container"> <!--Contains the first body element-->
-        <h1>Choose Your System</h1>    
-        <i class="fa-solid fa-circle-question prompt questionblock"></i>  
-    </div>
-
-    <div class="body-container">
-            <img src="img/steamvr.svg" alt="Steam VR" class="buttonprompt">
-    </div>
-
-    <div class="body-container">
-        <a href="oculussetup.html">
-            <img src="img/oculus.svg" alt="Oculus">
-        </a>
-    </div>
+    <a style="display:block" href="#">
+        <div class="body-container"> <!--Contains the first body element-->
+            <h2>Motion</h2>
+            <p>Motion or VR Sickness is a common problem which is caused by a mismatch of physical space and VR movement.</p>
+        </div>
+    </a>
+    
+    <a style="display:block" href="#">
+        <div class="body-container" href="">
+            <h2>Performance</h2>
+            <p>Performance refers to any frame drop or latency issues that may arise while using the headset.</p>
+        </div>
+    </a>
+    <a style="display:block" href="#">
+        <div class="body-container">
+            <h2>Troubleshooting</h2>
+            <p>Common problems may arise which negatively affect VR performance, a non-exhaustive list is found here.</p>
+        </div>
+    </a>
 
     <div class="prompt-container">
         <p>System refers to the platform that your headset supports. For example, the Meta Quest 2 uses Oculus, but can use SteamVR if linked to a computer.</p>
@@ -66,9 +71,9 @@
     </div>
 
     <div class="prompt-container2">
-        <p>Do you have any physical disabilities relating to leg mobility or limited space for VR?</p>
+        <p>Do you have any physical disabilities relating to leg mobility?</p>
         <div class="button-container">
-            <a href="accessibility.html">
+            <a href="">
                 <button>Yes</button>
             </a>
             <a href="steamvrsetup.html">
