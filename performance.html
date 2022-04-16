@@ -19,9 +19,9 @@
               <li><a href="optionalhardware.html">Optional Hardware</a></li>
               <li><a href="optionalsoftware.html">Optional Software</a></li>
               <li><a href="overlays.html">Overlays</a></li>
-              <li><a href="#" class="active"><span>Tips</span></a></li>
+              <li><a href="tips.html"><span>Tips</span></a></li>
               <li><a href="motionsickness.html">Motion Sickness</a></li>
-              <li><a href="performance.html">Performance</a></li>
+              <li><a href="#" class="active">Performance</a></li>
               <li><a href="#">Troubleshooting</a></li>
             </ul>
             </div>
@@ -30,9 +30,7 @@
           <div class="bgclick"></div>
           <div class="blurbg"></div>
           <div class="bgclick2"></div>
-          <div class="blurbg2"></div>
-          <div class="bgclick3"></div>
-          <div class="blurbg3"></div> <!--Overlay elements-->
+          <div class="blurbg2"></div> <!--Overlay elements-->
 
         <div id="titlebar"> <!--This div contains the hamburger menu and the title text-->
             <!--<i class="fa-solid fa-bars"></i>-->
@@ -43,50 +41,33 @@
         </div>
     </header>
 
-    <a style="display:block" href="motionsickness.html">
         <div class="body-container"> <!--Contains the first body element-->
-            <h2>Motion</h2>
-            <p>Motion or VR Sickness is a common problem which is caused by a mismatch of physical space and VR movement.</p>
-        </div>
+            <h1>Performance</h1>
+            <p>
+                A Powerful GPU and CPU is needed when running Virtual Reality Programs due to the image being rendered twice. Monitoring which component is acting as a bottleneck can help in determining the best course of action. Using <a href="https://github.com/fholger/openvr_fsr">OpenVRFSR</a> can provide additional frames. Also consider reducing the resolution of the the application. For wireless latency, WIFI6 or better may be needed for a clear image.
+            </p>
+<div class="button-container">
+    <a href="tips.html">
+        <button>Okay</button>
     </a>
-    
-    <a style="display:block" href="performance.html">
-        <div class="body-container">
-            <h2>Performance</h2>
-            <p>Performance refers to any frame drop or latency issues that may arise while using the headset.</p>
-        </div>
-    </a>
-    <a style="display:block" href="#">
-        <div class="body-container">
-            <h2>Troubleshooting</h2>
-            <p>Common problems may arise which negatively affect VR performance, a non-exhaustive list is found here.</p>
-        </div>
-    </a>
-
+</div>       
+</div>
     <div class="prompt-container">
-        <p>System refers to the platform that your headset supports. For example, the Meta Quest 2 uses Oculus, but can use SteamVR if linked to a computer.</p>
-        <div class="button-container">
-            <button class="promptcloser">Ok</button>
-        </div>
-    </div>
-
-    <div class="prompt-container2">
-        <p>Do you have any physical disabilities relating to leg mobility?</p>
-        <div class="button-container">
+        <p>Do you have SteamVR Base Stations 1.0 or 2.0?</p>
+        <div class="button-container"> 
             <a href="">
                 <button>Yes</button>
             </a>
-            <a href="steamvrsetup.html">
+            <a href="">
                 <button>No</button>
-             </a>
+            </a>
         </div>
     </div>
-
-    <script src="main.js"></script>
     <style>
-        body{
+            body{
             overflow-y: hidden;
         }
     </style>
+    <script src="main.js"></script>
 </body>
 </html> 
