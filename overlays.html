@@ -13,12 +13,12 @@
             <ul>
               <li><a href="index.html"><span class="topnav">Home</span></a></li>
               <li><a href="index.html">Initial Setup</a></li>
-              <li><a href="headset.html" class="active">Headset / Runtime</a></li>
+              <li><a href="headset.html">Headset / Runtime</a></li>
               <li><a href="accessibility.html"><span>Accessibility</span></a></li>
               <li><a href="accessibility.html">Confirmation</a></li>
               <li><a href="optionalhardware.html">Optional Hardware</a></li>
               <li><a href="optionalsoftware.html">Optional Software</a></li>
-              <li><a href="overlays.html">Overlays</a></li>
+              <li><a href="#" class="active">Overlays</a></li>
               <li><a href="#"><span>Tips</span></a></li>
               <li><a href="#">Motion Sickness</a></li>
               <li><a href="#">Performance</a></li>
@@ -30,7 +30,9 @@
           <div class="bgclick"></div>
           <div class="blurbg"></div>
           <div class="bgclick2"></div>
-          <div class="blurbg2"></div> <!--Overlay elements-->
+          <div class="blurbg2"></div>
+          <div class="bgclick3"></div>
+          <div class="blurbg3"></div> <!--Overlay elements-->
 
         <div id="titlebar"> <!--This div contains the hamburger menu and the title text-->
             <!--<i class="fa-solid fa-bars"></i>-->
@@ -41,39 +43,58 @@
         </div>
     </header>
 
+    <a style="display:block" href="https://store.steampowered.com/app/1009850/OVR_Advanced_Settings/">
         <div class="body-container"> <!--Contains the first body element-->
-            <h1>SteamVR Overlays</h1>
-            <p>
-                Overlays allow additional programs to be run regardless on top of any game or experience that you’re currently playing. This can be useful for having additional windows open in real time much like a desktop,  to monitoring performance and statistics in VR to in-depth settings. 
-            </p>
-            <p>
-                This will take additional setup time, but can increase the customization of your experience. Would you be interested in exploring this feature?
-            </p>
-<div class="button-container">
-    <a href="overlays.html">
-        <button>Yes</button>
+            <h2>OVR Advanced Settings</h2>
+            <p>OVR Advanced settings allows fine adjustment of settings such as playspace height, and room borders.</p>
+        </div>
     </a>
-    <a href="tips.html">
-        <button>No</button>
+    
+    <a style="display:block" href="https://store.steampowered.com/app/908520/fpsVR/">
+        <div class="body-container" href="">
+            <h2>fpsVR</h2>
+            <p>fpsVR allows users to monitor CPU and GPU performance during games to identify bottlenecks. It also allows tracking of controller/headset battery.</p>
+        </div>
     </a>
-</div>       
-</div>
+    <a style="display:block" href="https://store.steampowered.com/app/1068820/OVR_Toolkit/">
+        <div class="body-container">
+            <h2>OVR Toolkit/XSOverlay</h2>
+            <p>Both of these programs function similarly, they allow windows to be opened and interacted with while in a VR experience seamlessly.</p>
+        </div>
+    </a>
+
+    <div class="button-container">
+        <a href="tips.html">
+            <button style="margin-top: 0; max-width: 6rem;">
+                Next
+            </button>
+        </a>
+    </div>
+
     <div class="prompt-container">
-        <p>Do you have SteamVR Base Stations 1.0 or 2.0?</p>
-        <div class="button-container"> 
+        <p>System refers to the platform that your headset supports. For example, the Meta Quest 2 uses Oculus, but can use SteamVR if linked to a computer.</p>
+        <div class="button-container">
+            <button class="promptcloser">Ok</button>
+        </div>
+    </div>
+
+    <div class="prompt-container2">
+        <p>Do you have any physical disabilities relating to leg mobility?</p>
+        <div class="button-container">
             <a href="">
                 <button>Yes</button>
             </a>
-            <a href="">
+            <a href="steamvrsetup.html">
                 <button>No</button>
-            </a>
+             </a>
         </div>
     </div>
+
+    <script src="main.js"></script>
     <style>
-            body{
+        body{
             overflow-y: hidden;
         }
     </style>
-    <script src="main.js"></script>
 </body>
 </html> 
